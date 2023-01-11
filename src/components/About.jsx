@@ -148,7 +148,7 @@ const About = () => {
                 </motion.nav>
                 :
                 <nav className="absolute my-auto pb-20 h-[50%] ">
-                    <ul className="list-none backdrop-blur-md h-full w-24 flex flex-col justify-evenly items-center font-semibold about">
+                    <ul className="list-none backdrop-blur-md h-full w-24 flex flex-col justify-evenly items-center font-semibold about text-xl md:text-base">
                         {navMenu.map((menu, index) => (
                             <li key={index} className={`rotate-90 ${active === index && "active"} w-max`}>
                                 <a
