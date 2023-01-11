@@ -5,11 +5,13 @@ const App = () => {
   return (
     <div className='max-w-7xl mx-auto'>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/technology" element={<Skill />} />
-        <Route path="/project" element={<Projects />} />
-      </Routes>
+      <div className="mt-32">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/technology" element={<Skill />} />
+          <Route path="/project" element={<Projects />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   )

@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <div className="mx-auto">
             <div className="flex items-center justify-center my-20">
-                <h3 className="text-white text-7xl font-semibold">Projects.</h3>
+                <h3 className="text-gray-800 dark:text-white text-7xl font-semibold">Projects.</h3>
                 <svg
                     className="w-32 md:w-40"
                     viewBox="0 0 343 322"
@@ -33,7 +33,7 @@ const Projects = () => {
                 </svg>
             </div>
 
-            <div className="flex flex-row flex-wrap justify-center gap-6 text-white">
+            <div className="flex flex-row flex-wrap justify-center gap-6 text-800 dark:text-white">
                 {project.map((projects) => (
                     <ProjectCard projects={projects}/>
                 ))}

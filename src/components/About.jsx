@@ -17,7 +17,7 @@ const navMenu = [
     },
 ];
 
-const AboutMe = ({ setVisible }) => {
+const AboutMe = ({setVisible}) => {
     const [aniVisible, setAniVisible] = useState(false)
     return (
         <div className="flex flex-col-reverse md:flex-row flex-wrap md:items-center gap-10 md:gap-24 md:px-10">
@@ -87,7 +87,7 @@ const AboutMe = ({ setVisible }) => {
     );
 }
 
-const Skills = ({ setVisible }) => {
+const Skills = ({setVisible}) => {
     const tech = skill.slice(0, 3);
     return (
         <div className="flex flex-col md:flex-row gap-10 px-4">
@@ -99,10 +99,10 @@ const Skills = ({ setVisible }) => {
                         <div className="mt-4 w-[30%]" key={skill.name}>
                             <img src={skill.img} alt="" className="h-16" />
                             <h4 className="font-semibold text-lg my-1">{skill.name}</h4>
-                            <p className="text-base md:text-sm text-gray-400">{skill.text}</p>
+                            <p className="text-base md:text-sm text-500 dark:text-gray-400">{skill.text}</p>
                         </div>
                     ))}
-                    <Link to={"/technology"} className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 mt-8">View More</Link>
+                    <Link to={"/technology"} className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 hover:text-white mt-8">View More</Link>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@ const About = () => {
                 >
                     <ul className="list-none backdrop-blur-md h-full w-24 flex flex-col justify-evenly items-center font-semibold about">
                         {navMenu.map((menu, index) => (
-                            <li key={index} className={`rotate-90 ${active === index && "active"} w-max`}>
+                            <li key={index} className={`rotate-90 ${active === index && "active"} w-max dark:nav-text`}>
                                 <a
                                     href={menu.href}
                                     className="py-4"
@@ -162,7 +162,7 @@ const About = () => {
                         ))}
                     </ul>
                 </nav>}
-            <section className=" ml-32 text-white my-auto">
+            <section className=" ml-32 text-gray-800 dark:text-white my-auto">
                 {active === 0 && <AboutMe setVisible={(a) => setVisible(a)} />}
                 {active === 1 && <Skills setVisible={(a) => setVisible(a)} />}
             </section>

@@ -63,7 +63,7 @@ html{
 }
 
 .sm-item {
-  @apply w-32 h-32 rounded-full flex items-center justify-center;
+  @apply w-32 h-32 rounded-full flex items-center justify-center mx-4 md:mx-10;
 }
 
 .sm-item:hover {
@@ -111,7 +111,7 @@ li {
 }
 
 .about>li {
-  background: -webkit-linear-gradient(94deg, rgba(210, 180, 255, 1) 0%, rgba(158, 226, 219, 1) 100%);
+  background: -webkit-linear-gradient(94deg, rgb(154, 153, 202) 0%, rgba(131, 219, 255, 1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

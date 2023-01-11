@@ -11,7 +11,7 @@ const ProjectCard = ({ projects }) => {
     return (
         <Waypoint onEnter={() => setImgVisible(true)}>
             <div key={projects.name} className='max-w-xl md:max-w-sm'>
-                <div className="p-2 border-[1px] rounded-md md:min-h-[190.3px] md:max-h-[191px]">
+                <div className="p-2 border-[1px] border-dark dark:border-white rounded-md md:min-h-[190.3px] md:max-h-[191px]">
                     <a
                         href={projects.web && projects.web}>
                         <motion.img
@@ -34,7 +34,7 @@ const ProjectCard = ({ projects }) => {
                         </a>
                     </div>
                 </div>
-                <p className="text-xl md:text-sm text-gray-200 my-2 md:text-justify">{projects.desc}</p>
+                <p className="text-xl md:text-sm text-900 dark:text-gray-200 my-2 md:text-justify">{projects.desc}</p>
                 <Waypoint onEnter={() => setTechVisible(true)}>
                     <div className="flex flex-wrap gap-2">
                         {projects.tech.map((tech, index) => (
