@@ -87,7 +87,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
             <div className='md:h-[85vh] md:max-h-[500px] mt-10 flex flex-col text-center items-center'>
                 <div className="text-center text-gray-400">
-                    <div className="text-6xl font-bold">
+                    <div className="text-5xl font-bold">
                         Hello,
                         <TypeAnimation
                             sequence={[
@@ -101,7 +101,6 @@ const Home = () => {
                             repeat={Infinity}
                             className="text-white font-mono"
                         />
-                        {/* <h1>I'm Nauval Fahreza</h1> */}
                     </div>
                     <div className="pt-2">
                         <p className="text-xl">Specialised in</p>
@@ -113,7 +112,7 @@ const Home = () => {
             <About />
             <FavProjects />
             <div className="text-white flex flex-col justify-center items-center md:pt-28 md:pb-16 py-28 md:h-[80vh] max-h-[800px]">
-                <h3 className='text-5xl font-semibold'>Interest To Working Together ?</h3>
+                <h3 className='text-4xl font-semibold'>Interest To Working Together ?</h3>
                 <a href="mailto:nauvalfahreza03@gmail.com" className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 mt-8">Contact Me</a>
             </div>
         </div>

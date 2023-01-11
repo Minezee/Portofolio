@@ -22,19 +22,19 @@ const ProjectCard = ({ projects }) => {
                     </a>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                    <h5 className="text-xl md:text-lg font-bold">{projects.name}</h5>
-                    <div className="flex text-blue-400 text-xl gap-2">
+                    <h5 className="text-3xl md:text-lg font-bold">{projects.name}</h5>
+                    <div className="flex text-blue-400 gap-2">
                         {projects.web &&
                             <a href={projects.web} target="_blank">
-                                <RiShareBoxLine />
+                                <RiShareBoxLine className="text-3xl md:text-base 2xl:text-lg"/>
                             </a>
                         }
                         <a href={projects.github} target="_blank">
-                            <FiGithub />
+                            <FiGithub className="text-3xl md:text-base 2xl:text-lg"/>
                         </a>
                     </div>
                 </div>
-                <p className="text-base md:text-sm text-gray-200 my-2 md:text-justify">{projects.desc}</p>
+                <p className="text-xl md:text-sm text-gray-200 my-2 md:text-justify">{projects.desc}</p>
                 <Waypoint onEnter={() => setTechVisible(true)}>
                     <div className="flex flex-wrap gap-2">
                         {projects.tech.map((tech, index) => (
@@ -44,7 +44,7 @@ const ProjectCard = ({ projects }) => {
                             transition={{
                                 duration: (index + 1) * 0.4,
                                 delay: (index) * 0.4}}
-                            key={tech} className="bg-gray-400 text-base md:text-sm px-2 py-1 rounded-lg">
+                            key={tech} className="bg-gray-400 text-lg md:text-sm px-2 py-1 rounded-lg">
                                 {tech}
                             </motion.div>
                         ))}
