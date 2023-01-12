@@ -87,6 +87,18 @@ li {
   position: absolute;
   width: 0;
   height: 1px;
+  background-color: black;
+  transition: all 0.5s;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dark .nav>li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
   background-color: white;
   transition: all 0.5s;
   bottom: 0;
@@ -111,6 +123,12 @@ li {
 }
 
 .about>li {
+  background: -webkit-linear-gradient(94deg, rgb(65, 62, 231) 0%, rgba(131, 219, 255, 1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .about>li {
   background: -webkit-linear-gradient(94deg, rgb(154, 153, 202) 0%, rgba(131, 219, 255, 1) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -5,6 +5,7 @@ import people from "../assets/people.svg";
 import { skill } from "../assets/data/skill";
 import { Link } from "react-router-dom";
 import { Waypoint } from "react-waypoint";
+import { TypeAnimation } from "react-type-animation";
 
 const navMenu = [
     {
@@ -91,10 +92,25 @@ const Skills = ({setVisible}) => {
     const tech = skill.slice(0, 3);
     return (
         <div className="flex flex-col md:flex-row gap-10 px-4">
-            <img src={people} alt="" className="max-w-sm md:w-[350px] md:h-[350px]" />
+            <motion.img 
+            animate={{scale: [0, 1]}}
+            transition={{duration: 1}}
+            src={people} alt="" className="max-w-sm md:w-[350px] md:h-[350px]" />
             <div>
-                <h3 className="text-4xl font-bold w-[87%]">These are some of the technologies I use frequently</h3>
-                <div className="flex flex-row flex-wrap mt-4 gap-5 justify-center ">
+            <TypeAnimation
+                            sequence={[
+                                "These are some of the technologies I use frequently",
+                                1000
+                            ]}
+                            speed={40}
+                            wrapper="h3"
+                            className="text-4xl font-bold w-[87%]"
+                        />
+                {/* <h3 className="text-4xl font-bold w-[87%]">These are some of the technologies I use frequently</h3> */}
+                <motion.div 
+                className="flex flex-row flex-wrap mt-4 gap-5 justify-center"
+                animate={{opacity: [0, 100]}}
+                transition={{duration: 1, delay: 4}}>
                     {tech.map((skill) => (
                         <div className="mt-4 w-[30%]" key={skill.name}>
                             <img src={skill.img} alt="" className="h-16" />
@@ -103,7 +119,7 @@ const Skills = ({setVisible}) => {
                         </div>
                     ))}
                     <Link to={"/technology"} className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 hover:text-white mt-8">View More</Link>
-                </div>
+                </motion.div>
             </div>
         </div>
     );

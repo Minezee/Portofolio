@@ -6,7 +6,7 @@ const FavProjects = () => {
     const favProject = project.slice(0, 3)
     return (
         <div className='md:max-h-[800px] text-gray-800 dark:text-white'>
-            <h3 className='text-5xl font-semibold pt-28 pb-16 text-center'>Here are a few of my favorite projects</h3>
+            <h3 className='text-4xl md:text-5xl font-semibold pt-28 pb-16 text-center max-w-xl md:max-w-6xl mx-auto'>Here are a few of my favorite projects</h3>
             <div className="flex flex-row flex-wrap justify-center gap-5">
                 {favProject.map((projects) => (
                     <ProjectCard key={projects.name} projects={projects} />

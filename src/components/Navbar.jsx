@@ -25,8 +25,6 @@ const Navbar = () => {
                 document.documentElement.classList.remove('dark')
             }
         }
-
-        console.log(dark)
     }, [dark])
 
     return (

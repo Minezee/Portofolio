@@ -41,43 +41,43 @@ const SocialMedia = () => {
 
     return (
         <div className="flex flex-row mt-12 md:mt-0 flex-wrap overflow-hidden w-full justify-center">
-                <Waypoint onEnter={() => setVisible(true)} onLeave={()=> setVisible(false)}/>
-                <motion.a
-                    href="#"
-                    className="pink sm-item"
-                    initial={{ x: `-${hide}px` }}
-                    animate={{ x: visible ? "0" : `-${hide}px`, rotate: visible ? roll : 0 }}
-                    transition={{ duration: 2 }}
-                >
-                    <img className="icon" src={instagram} alt="instagram" />
-                </motion.a>
-                <motion.a
-                    href="#"
-                    className="blue mt-10 sm-item"
-                    initial={{ x: `-${hide + 200}px` }}
-                    animate={{ x: visible ? "0" : `-${hide + 200}px`, rotate: visible ? roll * 2 : 0 }}
-                    transition={{ duration: 3 }}
-                >
-                    <FaTwitter className="icon text-blue-400" />
-                </motion.a>
-                <motion.a
-                    href="#"
-                    className="white mt-10 sm-item"
-                    initial={{ x: `-${hide2}px` }}
-                    animate={{ x: visible ? "0" : `-${hide2}px`, rotate: visible ? roll2 : 0 }}
-                    transition={{ duration: 4 }}
-                >
-                    <BsGithub className="icon text-gray-900" />
-                </motion.a>
-                <motion.a
-                    href="#"
-                    className="cyan sm-item"
-                    initial={{ x: `-${hide2 + 200}px` }}
-                    animate={{ x: visible ? "0" : `-${hide2 + 200}px`, rotate: visible ? roll2 + 360 : 0 }}
-                    transition={{ duration: 5 }}
-                >
-                    <FaLinkedin className="icon text-blue-600" />
-                </motion.a>
+            <Waypoint onEnter={() => setVisible(true)} onLeave={() => setVisible(false)} />
+            <motion.a
+                href="#"
+                className="pink sm-item"
+                initial={{ x: `-${hide}px` }}
+                animate={{ x: visible ? "0" : `-${hide}px`, rotate: visible ? roll : 0 }}
+                transition={{ duration: 2 }}
+            >
+                <img className="icon" src={instagram} alt="instagram" />
+            </motion.a>
+            <motion.a
+                href="#"
+                className="blue mt-10 sm-item"
+                initial={{ x: `-${hide + 200}px` }}
+                animate={{ x: visible ? "0" : `-${hide + 200}px`, rotate: visible ? roll * 2 : 0 }}
+                transition={{ duration: 3 }}
+            >
+                <FaTwitter className="icon text-blue-400" />
+            </motion.a>
+            <motion.a
+                href="#"
+                className="white mt-10 sm-item"
+                initial={{ x: `-${hide2}px` }}
+                animate={{ x: visible ? "0" : `-${hide2}px`, rotate: visible ? roll2 : 0 }}
+                transition={{ duration: 4 }}
+            >
+                <BsGithub className="icon text-gray-900" />
+            </motion.a>
+            <motion.a
+                href="#"
+                className="cyan sm-item"
+                initial={{ x: `-${hide2 + 200}px` }}
+                animate={{ x: visible ? "0" : `-${hide2 + 200}px`, rotate: visible ? roll2 + 360 : 0 }}
+                transition={{ duration: 5 }}
+            >
+                <FaLinkedin className="icon text-blue-600" />
+            </motion.a>
         </div>
     );
 };
