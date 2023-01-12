@@ -99,19 +99,19 @@ const Home = () => {
                             speed={20}
                             wrapper="h1"
                             repeat={Infinity}
-                            className="text-black dark:text-white font-mono"
+                            className="text-gray-800 dark:text-white font-mono"
                         />
                     </div>
                     <div className="pt-2">
                         <p className="text-xl">Specialised in</p>
-                        <p className="text-3xl font-bold py-2 text-black dark:text-white">Websites & Webapps</p>
+                        <p className="text-3xl font-bold py-2 text-gray-800 dark:text-white">Websites & Webapps</p>
                     </div>
                 </div>
                 <SocialMedia />
             </div>
             <About />
             <FavProjects />
-            <div className="text-black dark:text-white flex flex-col justify-center items-center md:pt-28 md:pb-16 py-28 md:h-[80vh] max-h-[800px]">
+            <div className="text-gray-800 dark:text-white flex flex-col justify-center items-center md:pt-28 md:pb-16 py-28 md:h-[80vh] max-h-[800px]">
                 <h3 className='text-4xl font-semibold'>Interest To Working Together ?</h3>
                 <a href="mailto:nauvalfahreza03@gmail.com" className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 hover:text-white mt-8">Contact Me</a>
             </div>

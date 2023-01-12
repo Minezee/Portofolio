@@ -3,7 +3,7 @@ import { SiTailwindcss } from 'react-icons/si'
 
 const Footer = () => {
   return (
-    <footer className='text-center py-16 bg-transparent text-white text-base md:text-xs flex flex-col gap-4 font-light'>
+    <footer className='text-center py-16 bg-transparent text-gray-800 dark:text-white text-base md:text-xs flex flex-col gap-4 font-light'>
         <div className='flex justify-center items-center bg-transparent text-xs font-semibold gap-2'>
             Created Using
             <div className='flex gap-1'>

@@ -32,7 +32,7 @@ const Navbar = () => {
     return (
         <>
             {deviceWidth > 1000 ?
-                <nav className="backdrop-blur-md sticky top-0 z-10 flex items-center justify-between px-10 py-5 text-black dark:text-white">
+                <nav className="backdrop-blur-md sticky top-0 z-10 flex items-center justify-between px-10 py-5 text-gray-800 dark:text-white">
                     <Link to={'/'} className="text-lg font-mono">
                         Nauval Fahreza
                         <div className="text-gray-500 dark:text-gray-400">Frontend Developer</div>
