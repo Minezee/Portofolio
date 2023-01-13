@@ -43,8 +43,9 @@ const SocialMedia = () => {
         <div className="flex flex-row mt-12 md:mt-0 flex-wrap overflow-hidden w-full justify-center">
             <Waypoint onEnter={() => setVisible(true)} onLeave={() => setVisible(false)} />
             <motion.a
-                href="#"
+                href="https://www.instagram.com/nauvalfhrza"
                 className="pink sm-item"
+                target="_blank"
                 initial={{ x: `-${hide}px` }}
                 animate={{ x: visible ? "0" : `-${hide}px`, rotate: visible ? roll : 0 }}
                 transition={{ duration: 2 }}
@@ -52,8 +53,9 @@ const SocialMedia = () => {
                 <img className="icon" src={instagram} alt="instagram" />
             </motion.a>
             <motion.a
-                href="#"
+                href="https://twitter.com/Minezzee"
                 className="blue mt-10 sm-item"
+                target="_blank"
                 initial={{ x: `-${hide + 200}px` }}
                 animate={{ x: visible ? "0" : `-${hide + 200}px`, rotate: visible ? roll * 2 : 0 }}
                 transition={{ duration: 3 }}
@@ -61,8 +63,9 @@ const SocialMedia = () => {
                 <FaTwitter className="icon text-blue-400" />
             </motion.a>
             <motion.a
-                href="#"
+                href="https://github.com/Minezee"
                 className="white mt-10 sm-item"
+                target="_blank"
                 initial={{ x: `-${hide2}px` }}
                 animate={{ x: visible ? "0" : `-${hide2}px`, rotate: visible ? roll2 : 0 }}
                 transition={{ duration: 4 }}
@@ -70,8 +73,9 @@ const SocialMedia = () => {
                 <BsGithub className="icon text-gray-900" />
             </motion.a>
             <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/nauval-fahreza-812774242/"
                 className="cyan sm-item"
+                target="_blank"
                 initial={{ x: `-${hide2 + 200}px` }}
                 animate={{ x: visible ? "0" : `-${hide2 + 200}px`, rotate: visible ? roll2 + 360 : 0 }}
                 transition={{ duration: 5 }}

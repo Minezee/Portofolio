@@ -29,9 +29,10 @@ const ProjectCard = ({ projects }) => {
                                 <RiShareBoxLine className="text-3xl md:text-base 2xl:text-lg"/>
                             </a>
                         }
-                        <a href={projects.github} target="_blank">
+                        {projects.github &&
+                            <a href={projects.github} target="_blank">
                             <FiGithub className="text-3xl md:text-base 2xl:text-lg"/>
-                        </a>
+                        </a>}
                     </div>
                 </div>
                 <p className="text-xl md:text-sm text-900 dark:text-gray-200 my-2 md:text-justify">{projects.desc}</p>
