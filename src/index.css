@@ -16,8 +16,6 @@
   /* IE 10+ */
   user-select: none;
   /* Likely future */
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
 }
 
 html{
