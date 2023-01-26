@@ -4,7 +4,7 @@ export const project = [
     {
         name: "Lyriks",
         img: lyriks,
-        desc: "Projek Priba",
+        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sapiente ea fugiat consequatur iure quis velit repellendus iste quo dolore labore...",
         tech: [
             "React",
             "Tailwind",
