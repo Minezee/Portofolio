@@ -24,7 +24,7 @@ export const project = [
             "Redux",
         ],
         github: "https://github.com/Minezee/YourAnimeList",
-        web: "https://your-animee-lisstt.vercel.app"
+        web: "https://your-anime-list.vercel.app/"
     },
     {
         name: "Kuliner Kita",
