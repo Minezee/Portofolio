@@ -11,6 +11,7 @@ import nodejs from './nodejs.png';
 import animeList from './animeList.png';
 import kulinerKita from './kulinerKita.png';
 import lyriks from './lyriks.png';
+import taskmate from './taskmate.png';
 
 export {
     css,
@@ -26,4 +27,5 @@ export {
     js,
     next,
     nodejs,
+    taskmate,
 }
