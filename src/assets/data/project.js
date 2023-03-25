@@ -12,7 +12,7 @@ export const project = [
             "React Query",
         ],
         github: "https://github.com/Minezee/StudioHub",
-        web: "https://github.com/Minezee/taskmate"
+        web: "https://studiohub.vercel.app/"
     },
     {
         name: "Taskmate",
