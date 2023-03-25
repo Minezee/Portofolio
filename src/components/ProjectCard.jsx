@@ -25,13 +25,13 @@ const ProjectCard = ({ projects }) => {
                     <h5 className="text-3xl md:text-lg font-bold">{projects.name}</h5>
                     <div className="flex text-blue-400 gap-2">
                         {projects.web &&
-                            <a href={projects.web} target="_blank">
-                                <RiShareBoxLine className="text-3xl md:text-base 2xl:text-lg"/>
+                            <a href={projects.web} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
+                                <RiShareBoxLine className="text-3xl md:text-base 2xl:text-lg group-hover:text-white"/>
                             </a>
                         }
                         {projects.github &&
-                            <a href={projects.github} target="_blank">
-                            <FiGithub className="text-3xl md:text-base 2xl:text-lg"/>
+                            <a href={projects.github} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
+                            <FiGithub className="text-3xl md:text-base 2xl:text-lg group-hover:text-white"/>
                         </a>}
                     </div>
                 </div>
