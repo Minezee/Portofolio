@@ -4,7 +4,7 @@ export const project = [
     {
         name: "StudioHub",
         img: studiohub,
-        desc: "This is a project that my team and I developed when I was an intern at BCC (UB's Filkom community) as a front-end web developer.",
+        desc: "This is a website that my team and I developed during our internship at BCC (Filkom UB community) as front-end web developers. It can be used to search for studios, musical instruments, and music events online.",
         tech: [
             "React",
             "Tailwind",
