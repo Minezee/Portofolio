@@ -1,6 +1,19 @@
-import { kulinerKita, animeList, lyriks, taskmate } from ".."
+import { kulinerKita, animeList, lyriks, taskmate, studiohub } from ".."
 
 export const project = [
+    {
+        name: "StudioHub",
+        img: studiohub,
+        desc: "This is a project that my team and I developed when I was an intern at BCC (UB's Filkom community) as a front-end web developer.",
+        tech: [
+            "React",
+            "Tailwind",
+            "React Router",
+            "React Query",
+        ],
+        github: "https://github.com/Minezee/StudioHub",
+        web: "https://github.com/Minezee/taskmate"
+    },
     {
         name: "Taskmate",
         img: taskmate,
