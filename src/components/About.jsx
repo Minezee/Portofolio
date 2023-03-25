@@ -58,7 +58,7 @@ const AboutMe = ({setVisible}) => {
                             duration: 0.5,
                             delay: 1.5,
                         }}
-                        className="mt-5 text-lg max-w-xl"
+                        className="my-5 text-lg max-w-xl"
                     >
                         My name is Nauval Fahreza Attamimi, I'm from indonesia and now i'm
                         learning React as a Front-end developer. I'm learning React by
