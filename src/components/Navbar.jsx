@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const deviceWidth = window.innerWidth;
     const [isOpen, setIsOpen] = useState(false);
 
     const isDark = localStorage.theme === 'dark'
@@ -29,8 +28,7 @@ const Navbar = () => {
 
     return (
         <>
-            {deviceWidth > 1000 ?
-                <nav className="backdrop-blur-md sticky top-0 z-10 flex items-center justify-between px-10 py-5 text-gray-800 dark:text-white">
+                <nav className="backdrop-blur-md sticky top-0 z-10 hidden sm:flex items-center justify-between px-10 py-5 text-gray-800 dark:text-white">
                     <Link to={'/'} className="text-lg font-mono">
                         Nauval Fahreza
                         <div className="text-gray-500 dark:text-gray-400">Frontend Developer</div>
@@ -48,8 +46,7 @@ const Navbar = () => {
                         }
                     </button>
                 </nav>
-                :
-                <nav>
+                <nav className='block sm:hidden'>
                     <button onClick={() => setIsOpen(!isOpen)} className={`fixed top-10 right-10 flex flex-col justify-center items-center gap-3 backdrop-blur-sm z-50 h-24 w-24 rounded-full`}>
                         {/* navicon mobile */}
                         <div className={`${isOpen && "absolute rotate-45"} w-10 h-1 bg-black dark:bg-white transition-all`}></div>
@@ -76,7 +73,6 @@ const Navbar = () => {
                             </>}
                     </div>
                 </nav>
-            }
         </>
     )
 }
