@@ -8,7 +8,7 @@ const Projects = () => {
             <div className="flex items-center justify-center my-20">
                 <h3 className="text-gray-800 dark:text-white text-7xl font-semibold">Projects.</h3>
                 <svg
-                    className="w-32 md:w-40"
+                    className="w-32 md:w-24"
                     viewBox="0 0 343 322"
                     xmlns="http://www.w3.org/2000/svg"
                 >
