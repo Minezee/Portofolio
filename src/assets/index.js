@@ -12,7 +12,7 @@ import animeList from './animeList.png';
 import kulinerKita from './kulinerKita.png';
 import lyriks from './lyriks.png';
 import taskmate from './taskmate.png';
-import studiohub from './studiohub.jpg';
+import studiohub from './studiohub.jpeg';
 
 export {
     css,
