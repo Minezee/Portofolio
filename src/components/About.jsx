@@ -68,17 +68,18 @@ const AboutMe = ({setVisible}) => {
                         especially on websites and currently exploring React.
                     </motion.p>
                 </Waypoint>
-                <motion.button
+                <motion.a
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{
                         duration: 0.5,
                         delay: 1.5,
                     }}
+                    href="https://drive.google.com/file/d/1kWQG4uqIzLYa7TYPdCcwwu7WJl0NZcK_/view?usp=sharing"
                     className="button"
                 >
                     My Resume
-                </motion.button>
+                </motion.a>
             </div>
 
             <div>
