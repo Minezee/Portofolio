@@ -62,6 +62,7 @@ export const project = [
             "React Router",
             "Firebase",
         ],
+        github: "https://github.com/Minezee/KulinerKita",
     },
     {
         name: "Taskmate API",

@@ -12,8 +12,9 @@ const ProjectCard = ({ projects }) => {
         <Waypoint onEnter={() => setImgVisible(true)}>
             <div key={projects.name} className='max-w-xl md:max-w-sm'>
                 <div className="p-2 border-[1px] border-dark dark:border-white rounded-md md:min-h-[190.3px] md:max-h-[191px]">
-                    <a
-                        href={projects.web && projects.web}>
+                    <a  
+                        target="_blank"
+                        href={projects.web || projects.github}>
                         <motion.img
                         initial= {{scale: 0}}
                         animate={{ scale: imgVisible ? 1 : 0 }}
