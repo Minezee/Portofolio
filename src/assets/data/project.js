@@ -43,7 +43,7 @@ export const project = [
     {
         name: "Lyriks",
         img: lyriks,
-        desc: "This is my first react, redux, and tailwind project that i learn by watching tutorial at youtube and the design is 100% following the video.",
+        desc: "This is my first react, redux, and tailwind project that i learn by watching tutorial at youtube and the design is 100% following the video. (Not Responsive yet)",
         tech: [
             "React",
             "Tailwind",
@@ -55,7 +55,7 @@ export const project = [
     {
         name: "Kuliner Kita",
         img: kulinerKita,
-        desc: "This is a website that I created to fulfill my final project and also to learn firebase auth by google, and all data uses dummy data.",
+        desc: "This is a website that I created to fulfill my final project and also to learn firebase auth by google, and all data uses dummy data. (Not Responsive yet)",
         tech: [
             "React",
             "Tailwind",
