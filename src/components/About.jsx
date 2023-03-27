@@ -75,7 +75,7 @@ const AboutMe = ({setVisible}) => {
                         duration: 0.5,
                         delay: 1.5,
                     }}
-                    href="https://drive.google.com/file/d/1kWQG4uqIzLYa7TYPdCcwwu7WJl0NZcK_/view?usp=sharing"
+                    href="https://drive.google.com/file/d/10AaCPRv6s_g_yuaiqrvIWNmsm7kL7x_k/view?usp=share_link"
                     className="button"
                 >
                     My Resume
