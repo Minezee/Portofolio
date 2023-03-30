@@ -105,7 +105,7 @@ const Home = () => {
                                 1000,
                             ]}
                             speed={20}
-                            wrapper="h1"
+                            wrapper="h2"
                             repeat={Infinity}
                             className="text-gray-800 dark:text-white font-mono"
                         />

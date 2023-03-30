@@ -30,7 +30,7 @@ const Navbar = () => {
         <>
                 <nav className="backdrop-blur-md sticky top-0 z-10 hidden sm:flex items-center justify-between px-10 py-5 text-gray-800 dark:text-white">
                     <Link to={'/'} className="text-lg font-mono">
-                        Nauval Fahreza
+                        <h1>Nauval Fahreza</h1>
                         <div className="text-gray-500 dark:text-gray-400">Frontend Developer</div>
                     </Link>
                     <ul className="flex items-center gap-20 nav">
