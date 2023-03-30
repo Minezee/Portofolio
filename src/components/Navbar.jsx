@@ -38,7 +38,7 @@ const Navbar = () => {
                         <li><Link to={'/project'}>Projects</Link></li>
                         <li><a href="mailto:nauvalfahreza03@gmail.com">Contact</a></li>
                     </ul>
-                    <button onClick={() => { setDark(!dark); localStorage.theme === 'dark' ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark") }} className="text-3xl text-yellow-500 dark:text-yellow-400">
+                    <button name='theme' onClick={() => { setDark(!dark); localStorage.theme === 'dark' ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark") }} className="text-3xl text-yellow-500 dark:text-yellow-400">
                         {dark ?
                             <HiMoon />
                             :
@@ -68,7 +68,7 @@ const Navbar = () => {
                                     <li><Link onClick={() => setIsOpen(false)} to={'/'}>Home</Link></li>
                                     <li><Link onClick={() => setIsOpen(false)} to={'/technology'}>Technology</Link></li>
                                     <li><Link onClick={() => setIsOpen(false)} to={'/project'}>Projects</Link></li>
-                                    <li><a href="mailto:nauvalfahreza03@gmail.com">Contact</a></li>
+                                    <li><a aria-label='open my instagram' href="mailto:nauvalfahreza03@gmail.com">Contact</a></li>
                                 </ul>
                             </>}
                     </div>

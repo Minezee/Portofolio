@@ -43,6 +43,7 @@ const SocialMedia = () => {
         <div className="flex flex-row mt-12 md:mt-0 flex-wrap overflow-hidden w-full justify-center">
             <Waypoint onEnter={() => setVisible(true)} onLeave={() => setVisible(false)} />
             <motion.a
+                aria-label="check my instagram"
                 href="https://www.instagram.com/nauvalfhrza"
                 className="pink sm-item"
                 target="_blank"
@@ -53,6 +54,7 @@ const SocialMedia = () => {
                 <img className="icon" src={instagram} alt="instagram" />
             </motion.a>
             <motion.a
+                aria-label="check my twitter"
                 href="https://twitter.com/Minezzee"
                 className="blue mt-10 sm-item"
                 target="_blank"
@@ -63,6 +65,7 @@ const SocialMedia = () => {
                 <FaTwitter className="icon text-blue-400" />
             </motion.a>
             <motion.a
+                aria-label="check my github"
                 href="https://github.com/Minezee"
                 className="white mt-10 sm-item"
                 target="_blank"
@@ -73,6 +76,7 @@ const SocialMedia = () => {
                 <BsGithub className="icon text-gray-900" />
             </motion.a>
             <motion.a
+                aria-label="check my linkedin"
                 href="https://www.linkedin.com/in/nauval-fahreza-812774242/"
                 className="cyan sm-item"
                 target="_blank"
