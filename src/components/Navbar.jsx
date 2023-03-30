@@ -38,7 +38,7 @@ const Navbar = () => {
                         <li><Link to={'/project'}>Projects</Link></li>
                         <li><a href="mailto:nauvalfahreza03@gmail.com">Contact</a></li>
                     </ul>
-                    <button name='theme' onClick={() => { setDark(!dark); localStorage.theme === 'dark' ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark") }} className="text-3xl text-yellow-500 dark:text-yellow-400">
+                    <button aria-label='change theme' onClick={() => { setDark(!dark); localStorage.theme === 'dark' ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark") }} className="text-3xl text-yellow-500 dark:text-yellow-400">
                         {dark ?
                             <HiMoon />
                             :

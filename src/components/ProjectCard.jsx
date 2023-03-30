@@ -13,6 +13,7 @@ const ProjectCard = ({ projects }) => {
             <div key={projects.name} className='max-w-xl md:max-w-sm'>
                 <div className="p-2 border-[1px] border-dark dark:border-white rounded-md md:min-h-[190.3px] md:max-h-[191px]">
                     <a  
+                        aria-label={`open ${projects.name} website`}
                         target="_blank"
                         href={projects.web || projects.github}>
                         <motion.img
@@ -26,12 +27,12 @@ const ProjectCard = ({ projects }) => {
                     <h5 className="text-3xl md:text-lg font-bold">{projects.name}</h5>
                     <div className="flex text-blue-400 gap-2">
                         {projects.web &&
-                            <a href={projects.web} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
+                            <a aria-label={`open ${projects.name} website`} href={projects.web} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
                                 <RiShareBoxLine className="text-3xl md:text-base 2xl:text-lg group-hover:text-white"/>
                             </a>
                         }
                         {projects.github &&
-                            <a href={projects.github} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
+                            <a aria-label={`open ${projects.name} on github`} href={projects.github} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">
                             <FiGithub className="text-3xl md:text-base 2xl:text-lg group-hover:text-white"/>
                         </a>}
                     </div>
