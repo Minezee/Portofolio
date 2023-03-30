@@ -10,7 +10,7 @@ const Footer = () => {
                 <FaReact className='text-[#5cceee] text-2xl'/> <SiTailwindcss className='text-[#35aaa4] text-2xl'/>
             </div>
         </div>
-        <p>Created by <a href='' className='font-bold'>Nauval Fahreza A</a>. All rights reserved.</p>
+        <p>Created by <a href='https://www.instagram.com/nauvalfhrza' className='font-bold'>Nauval Fahreza A</a>. All rights reserved.</p>
     </footer>
   )
 }
