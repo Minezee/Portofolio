@@ -21,7 +21,7 @@ const navMenu = [
 const AboutMe = ({setVisible}) => {
     const [aniVisible, setAniVisible] = useState(false)
     return (
-        <div className="flex flex-col-reverse md:flex-row flex-wrap md:items-center gap-10 md:gap-24 md:px-10">
+        <section className="flex flex-col-reverse md:flex-row flex-wrap md:items-center gap-10 md:gap-24 md:px-10">
             <div>
                 <Waypoint onEnter={() => setVisible(true)} onLeave={() => setVisible(false)}>
                     <h3 className="font-bold flex gap-5 overflow-hidden">
@@ -85,14 +85,14 @@ const AboutMe = ({setVisible}) => {
             <div>
                 <img src={peoples} alt="" className="max-w-sm md:w-[350px] md:h-[350px]" />
             </div>
-        </div>
+        </section>
     );
 }
 
 const Skills = ({setVisible}) => {
     const tech = skill.slice(0, 3);
     return (
-        <div className="flex flex-col md:flex-row gap-10 px-4">
+        <section className="flex flex-col md:flex-row gap-10 px-4">
             <motion.img 
             animate={{scale: [0, 1]}}
             transition={{duration: 1}}
@@ -122,7 +122,7 @@ const Skills = ({setVisible}) => {
                     <Link to={"/technology"} className="text-base md:text-sm rounded-full px-4 py-2 border-2 border-blue-500 hover:bg-blue-900 hover:opacity-90 hover:text-white mt-8">View More</Link>
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 };
 

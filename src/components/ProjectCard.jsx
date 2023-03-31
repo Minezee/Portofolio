@@ -24,7 +24,7 @@ const ProjectCard = ({ projects }) => {
                     </a>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                    <h5 className="text-3xl md:text-lg font-bold">{projects.name}</h5>
+                    <h3 className="text-3xl md:text-lg font-bold">{projects.name}</h3>
                     <div className="flex text-blue-400 gap-2">
                         {projects.web &&
                             <a aria-label={`open ${projects.name} website`} href={projects.web} target="_blank" className="bg-none hover:bg-blue-400 rounded-full px-1 py-1 group">

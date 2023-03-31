@@ -4,9 +4,9 @@ import { project } from "../assets/data/project"
 
 const Projects = () => {
     return (
-        <div className="mx-auto">
+        <section className="mx-auto">
             <div className="flex items-center justify-center my-20">
-                <h3 className="text-gray-800 dark:text-white text-7xl font-semibold">Projects.</h3>
+                <h2 className="text-gray-800 dark:text-white text-7xl font-semibold">Projects.</h2>
                 <svg
                     className="w-32 md:w-24"
                     viewBox="0 0 343 322"
@@ -38,7 +38,7 @@ const Projects = () => {
                     <ProjectCard projects={projects}/>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

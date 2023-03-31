@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const Skill = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <div className="mx-5 md:mx-auto mt-16 max-w-6xl text-gray-800 dark:text-white">
+        <section className="mx-5 md:mx-auto mt-16 max-w-6xl text-gray-800 dark:text-white">
             <h3 className= "text-6xl font-semibold text-center">
                 This is the Technology I've Used Before</h3>
             <div className="flex flex-row flex-wrap my-12 md:my-16 gap-5 justify-center">
@@ -26,7 +26,7 @@ const Skill = () => {
                     </Waypoint>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 
