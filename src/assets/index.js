@@ -13,6 +13,8 @@ import kulinerKita from './kulinerKita.png';
 import lyriks from './lyriks.png';
 import taskmate from './taskmate.png';
 import studiohub from './studiohub.jpeg';
+import kaliabu from './kaliabu.jpeg';
+import rahgadget from './rahgadget.jpeg';
 
 export {
     css,
@@ -30,4 +32,6 @@ export {
     nodejs,
     taskmate,
     studiohub,
+    kaliabu,
+    rahgadget,
 }

@@ -1,4 +1,4 @@
-import { kulinerKita, animeList, lyriks, taskmate, studiohub } from ".."
+import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget } from ".."
 
 export const project = [
     {
@@ -26,6 +26,30 @@ export const project = [
         ],
         github: "https://github.com/Minezee/taskmate",
         web: "https://taskmates.vercel.app/"
+    },
+    {
+        name: "Rahgadget",
+        img: rahgadget,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis quam aspernatur nisi veritatis, laboriosam aut obcaecati ducimus quisquam nostrum aliquid",
+        tech: [
+            "React",
+            "Tailwind",
+            "React Router",
+            "React Query",
+            "Framer Motion",
+        ],
+        web: "https://rahgadget.vercel.app/"
+    },
+    {
+        name: "Website Desa Kaliabu",
+        img: kaliabu,
+        desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis quam aspernatur nisi veritatis, laboriosam aut obcaecati ducimus quisquam nostrum aliquid",
+        tech: [
+            "Next Js",
+            "Tailwind",
+            "Framer Motion",
+        ],
+        web: "https://www.kaliabu-madiun.com/u/home"
     },
     {
         name: "Your Anime List",
