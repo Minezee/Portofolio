@@ -18,7 +18,7 @@ const navMenu = [
     },
 ];
 
-const AboutMe = ({setVisible}) => {
+const AboutMe = ({ setVisible }) => {
     const [aniVisible, setAniVisible] = useState(false)
     return (
         <section className="flex flex-col-reverse md:flex-row flex-wrap md:items-center gap-10 md:gap-24 md:px-10">
@@ -62,7 +62,7 @@ const AboutMe = ({setVisible}) => {
                     >
                         My name is Nauval Fahreza Attamimi, I'm from indonesia and now i'm
                         learning React as a Front-end developer. I'm learning React by
-                        self-exploration because it feels fun for me to do this. I'm a 3rd
+                        self-exploration because it feels fun for me to do this and i also do a freelance project. I'm a 5th
                         semester student at Brawijaya University majoring in Informatics
                         Engineering who have a lot of interest in front-end developers
                         especially on websites and currently exploring React.
@@ -75,8 +75,9 @@ const AboutMe = ({setVisible}) => {
                         duration: 0.5,
                         delay: 1.5,
                     }}
-                    href="https://drive.google.com/file/d/10AaCPRv6s_g_yuaiqrvIWNmsm7kL7x_k/view?usp=share_link"
+                    href="https://drive.google.com/file/d/1AlpX7rDojPiO3MpBDvbI-K6GDxMf2Jqm/view?usp=sharing"
                     className="button"
+                    target="_blank"
                 >
                     My Resume
                 </motion.a>
@@ -89,29 +90,30 @@ const AboutMe = ({setVisible}) => {
     );
 }
 
-const Skills = ({setVisible}) => {
+const Skills = ({ setVisible }) => {
     const tech = skill.slice(0, 3);
     return (
         <section className="flex flex-col md:flex-row gap-10 px-4">
-            <motion.img 
-            animate={{scale: [0, 1]}}
-            transition={{duration: 1}}
-            src={people} alt="" className="max-w-sm md:w-[350px] md:h-[350px]" />
+            <div className="max-w-sm md:w-[350px]">
+                <motion.img
+                    animate={{ scale: [0, 1] }}
+                    transition={{ duration: 1 }}
+                    src={people} alt="" className="max-w-sm md:w-[350px]" />
+            </div>
             <div>
-            <TypeAnimation
-                            sequence={[
-                                "These are some of the technologies I use frequently",
-                                1000
-                            ]}
-                            speed={40}
-                            wrapper="h3"
-                            className="text-4xl font-bold w-[87%]"
-                        />
-                {/* <h3 className="text-4xl font-bold w-[87%]">These are some of the technologies I use frequently</h3> */}
-                <motion.div 
-                className="flex flex-row flex-wrap mt-4 gap-5 justify-center"
-                animate={{opacity: [0, 100]}}
-                transition={{duration: 1, delay: 4}}>
+                <TypeAnimation
+                    sequence={[
+                        "These are some of the technologies I use frequently",
+                        1000
+                    ]}
+                    speed={40}
+                    wrapper="h3"
+                    className="text-4xl font-bold w-[87%]"
+                />
+                <motion.div
+                    className="flex flex-row flex-wrap mt-4 gap-5 justify-center"
+                    animate={{ opacity: [0, 100] }}
+                    transition={{ duration: 1, delay: 4 }}>
                     {tech.map((skill) => (
                         <div className="mt-4 w-[30%]" key={skill.name}>
                             <img src={skill.img} alt="" className="h-16" />
