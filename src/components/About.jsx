@@ -21,7 +21,7 @@ const navMenu = [
 const AboutMe = ({ setVisible }) => {
     const [aniVisible, setAniVisible] = useState(false)
     return (
-        <section className="flex flex-col-reverse md:flex-row flex-wrap md:items-center gap-10 md:gap-24 md:px-10">
+        <section className="flex flex-col-reverse md:flex-row md:items-center gap-10 md:gap-24 md:px-10">
             <div>
                 <Waypoint onEnter={() => setVisible(true)} onLeave={() => setVisible(false)}>
                     <h3 className="font-bold flex gap-5 overflow-hidden">
@@ -83,7 +83,7 @@ const AboutMe = ({ setVisible }) => {
                 </motion.a>
             </div>
 
-            <div>
+            <div className="hidden xl:block">
                 <img src={peoples} alt="" className="max-w-sm md:w-[350px] md:h-[350px]" />
             </div>
         </section>
@@ -94,7 +94,7 @@ const Skills = ({ setVisible }) => {
     const tech = skill.slice(0, 3);
     return (
         <section className="flex flex-col md:flex-row gap-10 px-4">
-            <div className="max-w-sm md:w-[350px]">
+            <div className="max-w-sm md:w-[350px] hidden xl:block">
                 <motion.img
                     animate={{ scale: [0, 1] }}
                     transition={{ duration: 1 }}
@@ -143,7 +143,7 @@ const About = () => {
     }, []);
 
     return (
-        <div id="about" className="h-[80vh] 2xl:h-[85vh] max-h-[800px] w-full flex items-center">
+        <div id="about" className="h-[60vh] xl:h-[80vh] 2xl:h-[85vh] max-h-[800px] w-full flex items-center">
             {width > 1000 ?
                 <motion.nav
                     initial={{ x: -100 }}
