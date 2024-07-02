@@ -1,17 +1,40 @@
-import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget } from ".."
+import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget, memoire } from ".."
 
 export const project = [
     {
-        name: "StudioHub",
-        img: studiohub,
-        desc: "This is a website that my team and I developed during our internship at BCC (Filkom UB community) as front-end web developers. It can be used to search for studios, musical instruments, and music events online.",
+        name: "TIA",
+        img: memoire,
+        desc: "A pilot website developed to facilitate communication between patients and doctors. Features an intuitive user interface with branching questions that generate an output sheet for doctors to assess and diagnose medical conditions.",
         tech: [
             "React JS",
+            "Typescript",
+            "Material UI",
+            "Supabase",
+        ],
+    },
+    {
+        name: "Memoire",
+        img: memoire,
+        desc: "The website I created for my mini project in my independent study program, featuring notes and task management.",
+        tech: [
+            "Next JS",
+            "Tailwind",
+            "Firebase",
+        ],
+        github: "https://github.com/Minezee/nauval-fahreza-mini-project",
+        web: "https://memoire-projects.vercel.app/"
+    },
+    {
+        name: "Rahgadget",
+        img: rahgadget,
+        desc: "The website I have created for my client Rahgadget is designed to showcase various laptops along with their reviews and related prices. With the addition of an admin panel, the site's content can be customized according to needs.",
+        tech: [
+            "React",
             "Tailwind",
             "React Query",
+            "Framer Motion",
         ],
-        github: "https://github.com/Minezee/StudioHub",
-        web: "https://studiohub.vercel.app/"
+        web: "https://rahgadget.vercel.app/"
     },
     {
         name: "Website Desa Kaliabu",
@@ -26,16 +49,16 @@ export const project = [
         web: "https://www.kaliabu-madiun.com/u/home"
     },
     {
-        name: "Rahgadget",
-        img: rahgadget,
-        desc: "The website I have created for my client Rahgadget is designed to showcase various laptops along with their reviews and related prices. With the addition of an admin panel, the site's content can be customized according to needs.",
+        name: "StudioHub",
+        img: studiohub,
+        desc: "This is a website that my team and I developed during our internship at BCC (Filkom UB community) as front-end web developers. It can be used to search for studios, musical instruments, and music events online.",
         tech: [
-            "React",
+            "React JS",
             "Tailwind",
             "React Query",
-            "Framer Motion",
         ],
-        web: "https://rahgadget.vercel.app/"
+        github: "https://github.com/Minezee/StudioHub",
+        web: "https://studiohub.vercel.app/"
     },
     {
         name: "Taskmate",

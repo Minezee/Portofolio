@@ -15,6 +15,8 @@ import taskmate from './taskmate.png';
 import studiohub from './studiohub.jpeg';
 import kaliabu from './kaliabu.jpeg';
 import rahgadget from './rahgadget.jpeg';
+import memoire from './memoire.png';
+import tia from './tia.png';
 
 export {
     css,
@@ -34,4 +36,6 @@ export {
     studiohub,
     kaliabu,
     rahgadget,
+    memoire,
+    tia,
 }
