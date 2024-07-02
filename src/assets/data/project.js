@@ -1,9 +1,9 @@
-import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget, memoire } from ".."
+import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget, memoire, tia } from ".."
 
 export const project = [
     {
         name: "TIA",
-        img: memoire,
+        img: tia,
         desc: "A pilot website developed to facilitate communication between patients and doctors. Features an intuitive user interface with branching questions that generate an output sheet for doctors to assess and diagnose medical conditions.",
         tech: [
             "React JS",
