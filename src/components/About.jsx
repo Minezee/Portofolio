@@ -75,7 +75,7 @@ const AboutMe = ({ setVisible }) => {
                         duration: 0.5,
                         delay: 1.5,
                     }}
-                    href="https://drive.google.com/file/d/1ERtspdmws1DYGknitrX0arke3-OLAMK-/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1hWt7O98f0NEiUwEd8-SoWX8NlL8wFLj7/view?usp=sharing"
                     className="button"
                     target="_blank"
                 >
