@@ -1,4 +1,4 @@
-import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget, memoire, tia } from ".."
+import { kulinerKita, animeList, lyriks, taskmate, studiohub, kaliabu, rahgadget, memoire, tia, millipoint } from ".."
 
 export const project = [
     {
@@ -11,6 +11,18 @@ export const project = [
             "Material UI",
             "Supabase",
         ],
+    },
+    {
+        name: "Millipoint.id",
+        img: millipoint,
+        desc: "A trusted game top-up website in Indonesia, offering fast, secure, and official services for popular games like MLBB, Free Fire, etc.",
+        tech: [
+            "Next JS",
+            "Tailwind",
+            "Ktor",
+            "Firebase",
+        ],
+        web: "https://millipoint.id/"
     },
     {
         name: "Memoire",

@@ -17,6 +17,7 @@ import kaliabu from './kaliabu.jpeg';
 import rahgadget from './rahgadget.jpeg';
 import memoire from './memoire.png';
 import tia from './tia.png';
+import millipoint from './millipoint.jpg';
 
 export {
     css,
@@ -38,4 +39,5 @@ export {
     rahgadget,
     memoire,
     tia,
+    millipoint,
 }
